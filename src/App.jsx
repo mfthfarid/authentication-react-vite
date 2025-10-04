@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegistrationForm from "./Auth/RegistrationForm";
 import EnhancedRegistrationForm from "./Auth/EnhancedRegistrationForm";
 import LoginForm from "./Auth/LoginForm";
+import ForgotPassword from "./Auth/ForgotPassword/ForgotPassword";
 import "./App.css";
 import "./Auth/LoginForm.module.css";
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="/register" element={<EnhancedRegistrationForm />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </div>
   );

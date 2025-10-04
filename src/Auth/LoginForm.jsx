@@ -166,9 +166,9 @@ export default function LoginForm() {
               />
               <span>Ingat saya</span>
             </label>
-            <a href="#" className={styles.link}>
+            <Link to="/forgot-password" className={styles.link}>
               Lupa password?
-            </a>
+            </Link>
           </div>
 
           <button

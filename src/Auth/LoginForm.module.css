@@ -112,28 +112,36 @@
 
 .passwordWrapper {
   position: relative;
+  width: 100%;
 }
 
 .passwordInput {
-  padding-right: 48px;
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  /* padding-right: 48px; */
 }
 
 .togglePassword {
+  color: #718096;
   position: absolute;
-  right: 12px;
+  right: 1px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
-  font-size: 20px;
-  padding: 4px;
-  opacity: 0.6;
-  transition: opacity 0.2s;
+  color: #666;
+  font-size: 18px;
 }
 
-.togglePassword:hover {
+.togglePassword:hover,
+.togglePassword:focus {
   opacity: 1;
+  color: #718096;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .errorMsg {
